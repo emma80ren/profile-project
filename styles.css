@@ -1,0 +1,210 @@
+/* Global Layout Set-up */
+* { 
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #15161a;
+  background: #f7f5f0;
+}
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #999;
+}
+a:hover {
+  color: #6633ff;
+}
+
+/* Section Styles */
+
+.main-nav {
+  width: 100%;
+  background: #011635;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 2% 0;
+  padding: 0;
+  width: 30%;
+}
+
+h1.name {
+    color: #ffffff;
+    font-family: 'Oswald', serif;
+    font-size: 1.25em;
+    letter-spacing: 0.01em;
+    width: 70%;
+    text-align: left;
+    padding-left: 5%;
+    float: left;
+}
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+
+
+.nav a {
+  color: #ebd3d5;
+  transition: all .5s;
+}
+.nav a:hover {
+  color: #ffffff;
+}
+
+header {
+  text-align: center;
+  background: url('images/Door-background.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+header {
+  line-height: 1.5;
+}
+header .profile-image {
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+
+  transition: all .5s;
+}
+
+
+header .profile-image:hover {
+  transform: scale(1.2) rotate(5deg);
+
+}
+h1.tag-name {
+  color: #011635;
+  text-shadow: 2px 1px 2px rgba(239, 239, 239, 1);
+  padding: 10px;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+}
+
+
+
+#tag-location {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.25em;
+  color: #efefef !important;
+  text-shadow: 2px 1px 2px rgba(65, 39, 42, 1);
+  width: 40%;
+  display: block;
+  margin: 25px auto;
+}
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: .75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all .5s;
+}
+a.twitter {
+  background-image: url(images/twitter.svg);
+}
+a.linkedin {
+  background-image: url(images/linkedin.svg);
+}
+a.github {
+  background-image: url(images/github.svg);
+}
+a.social:hover {
+  opacity: 1;
+}
+.clearfix {
+  clear: both;
+}
+
+/* Styles for specific to home page */
+
+.card {
+  margin: 25px 2.5%;
+  padding: 2.5% 5% 5%;
+  max-width: 47.5%;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #011635;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.card:hover {
+  border-color: #22a8fd;
+}
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #22a8fd;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: #011635;
+}
+
+/* Styles for Experience page */
+
+.card-single {
+  margin: 25px 2.5%;
+  padding: 2.5% 5% 5%;
+  max-width: 97.5%;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #011635;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.card-single:hover {
+  border-color: #22a8fd;
+}
+
+/* Styles for multiple screens in responsive.css */
+

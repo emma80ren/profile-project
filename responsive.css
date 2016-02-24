@@ -1,0 +1,77 @@
+/*--Styles for larger screens --*/
+@media screen and (min-width: 720px) {
+  
+  .flex {
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: flex; 
+      max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+
+  header {
+    min-height: 470px;
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+
+}
+
+/*--Styles to ensure legibility of specific elements on all screens--*/
+@media screen and (max-width: 850px) and (min-width: 371px) {
+    #tag-location {
+        width: 90%;
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
+    header {
+        padding-top: 20px;
+    }
+    header .profile-image{
+        margin-top: 85px;
+    }
+    
+    .card {
+        max-width: 95%;
+        margin: 15px 2.5%;
+    }
+    
+    h1.name {
+        width: 50%;
+    }
+    
+    .nav {
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 370px) {
+    
+    #tag-location {
+        width: 95%;
+        margin: 35px auto 10px;
+    }
+}
